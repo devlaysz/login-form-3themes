@@ -15,28 +15,36 @@ Funções JavaScript (darkone, darktwo, light): Implementação de três funçõ
 ## Como Utilizar
 Clone este repositório em sua máquina local.
 
+git clone https://github.com/devlaysz/login-form-3themes.git
 
 Abra o arquivo index.html em seu navegador web.
 
 Experimente as funcionalidades do formulário de login e teste a alternância entre os diferentes temas disponíveis.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 HTML5
-CSS3
-JavaScript
-Funções JavaScript
-O JavaScript neste projeto inclui duas funções principais para alternar entre os temas:
 
-darkOne(): Esta função aplica o primeiro tema escuro.
-darkTwo(): Esta função aplica o segundo tema escuro.
+CSS3
+
+JavaScript
+
+## Funções JavaScript
+O JavaScript neste projeto inclui três funções principais para alternar entre os temas:
+
+darkOneTheme(): Esta função aplica o primeiro tema escuro.
+
+darkTwoTheme(): Esta função aplica o segundo tema escuro.
+
+lightTheme(): Esta função aplica o tema claro.
+
 Você pode encontrar mais detalhes sobre a implementação dessas funções no arquivo script.js.
 
-Contribuição
+## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para discutir novos recursos ou enviar uma pull request com melhorias.
 
-Autor
-Seu Nome
+## Autor
+Laís dos Santos
 
-Licença
+## Licença
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
