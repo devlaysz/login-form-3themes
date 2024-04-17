@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+
+    /* variables */
+
+    --color-white-50: #F8FAFC;
+    --color-white-100: #FFF;
+    --color-dark-30: #B5B5B5;
+    --color-dark-50: #272727;
+    --color-dark-100: #000000;
+
+    /* light theme */
+    --color-light-30: #3B8EED;
+    --color-light-50: #2174D4;
+    --color-light-100: #1466C3;
+
+    /* dark-one theme */
+    --color-darkone-30: #FC4B08;
+    --color-darkone-50: #DE2E03;
+    --color-darkone-100: #C00000;
+
+    /* dark-two theme */
+    --color-darktwo-30: #2f2c79;
+    --color-darktwo-50: #171a4a;
+    --color-darktwo-100: #000020;
+
+    /* gradient */
+    --color-gradient: linear-gradient(90deg, var(--color-light-30), var(--color-light-50), var(--color-light-100));
+    --color-gradient2: linear-gradient(90deg, var(--color-darkone-30), var(--color-darkone-50), var(--color-darkone-100));
+    --color-gradient3: linear-gradient(90deg, var(--color-darktwo-30), var(--color-darktwo-50), var(--color-darktwo-100));
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORMULÁRIO */
+
+#login-form {
+    background-color: var(--color-white-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 350px;
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+}
+
+/* CABEÇALHO */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header h1 {
+    font-size: 35px;
+    position: relative;
+    margin-right: 70px;
+    margin-left: 110px;
+    top: 20px;
+    color: var(--color-dark-50);
+}
+
+/* ICON MODE */
+
+#dark-mode-icon {
+    position: relative;
+    margin-bottom: 90px;
+    font-size: larger;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#dark-mode-icon:hover {
+    transform: scale(1.1);
+}
+
+/* INPUTS */
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+#email-input, #password-input {
+    width: 280px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 18px;
+    outline: none;
+    caret-color: transparent;
+}
+
+#inputs i {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    margin: 8px;
+    color: var(--color-light-30);
+    transform: translate(110%);
+}
+
+input::placeholder {
+    color: var(--color-dark-30);
+    position: relative;
+    padding-left: 30px;
+}
+
+/* CHECKBOX */
+
+#checkbox {
+    position: relative;
+    left: 25px;
+    gap: 8px;
+}
+
+#remember-me {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid var(--color-dark-30);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    padding: 4px;
+}
+
+label {
+    font-size: 12px;
+    color: var(--color-dark-30);
+    position: relative;
+    bottom: 9px;
+    cursor: pointer;
+}
+
+/* FORGOT PASSWORD */
+
+#forgot-password a {
+    text-decoration: none;
+    color: var(--color-dark-30);
+    position: relative;
+    left: 222px;
+    bottom: 53px;
+    font-size: 11px;
+}
+
+#forgot-password a:hover {
+    color: var(--color-light-30);
+}
+
+/* BUTTON */
+
+button {
+    border-radius: 18px;
+    padding: 10px;
+    width: 270px;
+    position: relative;
+    left: 42px;
+    bottom: 35px;
+    background: var(--color-gradient);
+    color: var(--color-white-50);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* LINK CREATE ACCOUNT */
+
+p {
+    position: relative;
+    bottom: 55px;
+    left: 70px;
+    font-size: 14px;
+    margin: 15px;
+    color: var(--color-dark-30);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light-30);
+}
+
+/* DARK ONE */
+
+.dark-one > #container {
+    background: var(--color-gradient2);
+}
+
+.dark-one button {
+    background: var(--color-gradient2);
+}
+
+.dark-one #email-icon, .dark-one #key-icon {
+    color: var(--color-darkone-100); 
+}
+
+.dark-one a {
+    color: var(--color-darkone-100);
+}
+
+.dark-one #forgot-password a:hover {
+    color: var(--color-darkone-100);
+}
+
+
+/* DARK TWO */
+
+.dark-two > #container {
+    background: var(--color-gradient3);
+}
+
+.dark-two button {
+    background: var(--color-gradient3);
+}
+
+.dark-two #email-icon, .dark-two #key-icon {
+    color: var(--color-darktwo-30); 
+}
+
+.dark-two a {
+    color: var(--color-darktwo-30);
+}
+
+.dark-two #forgot-password a:hover {
+    color: var(--color-darktwo-30);
+}
