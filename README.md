@@ -10,7 +10,7 @@ Formulário de Login: Um formulário simples para entrada de usuário e senha.
 
 Três Temas Diferentes: Implementação de três temas diferentes para a interface do usuário: light, dark-one, dark-two.
 
-Funções JavaScript (darkone, darktwo, light): Implementação de duas funções JavaScript para alternar entre os temas.
+Funções JavaScript (darkone, darktwo, light): Implementação de três funções JavaScript para alternar entre os temas.
 
 ## Como Utilizar
 Clone este repositório em sua máquina local.
